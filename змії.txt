@@ -1,0 +1,16 @@
+<div id="foto">
+    <img src={blackmamba} alt={"blackmamba"} width="80%" height="80%"/>
+    <span id="foto1">Black Mamba</span>
+  </div>
+  <div id="one">
+    <img src={kingcobra} alt={"kingcobra"} width="80%" height="80%"/>
+	<span id="foto1">King Cobra</span>
+   </div>
+  <div id="two">
+     <img src={taipan} alt={"taipan"} width="80%" height="80%"/>
+	 <span id="foto1">Taipan</span>
+  </div>
+  <div id="three">
+    <img src={tiger} alt={"tiger"} width="80%" height="80%"/>
+	<span id="foto1">Tiger Snake</span>
+  </div>

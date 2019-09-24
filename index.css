@@ -1,0 +1,238 @@
+     h1 {
+	  position:absolute;
+	  margin-top: 20px;
+          left:442px;
+          font-size: 140px;
+	  font-weight: bold;
+	  font-family:"Monotype Corsiva";
+	  text-shadow:7px 7px 8px green;
+	}
+	@keyframes anim_posib {
+	  1% {color:white; font-size: 17px;}
+	  5% {color:white; font-size:17px;}
+	  10% {color:white; font-size: 17px;}
+	  35% {color:white; top:210px; left:220px; letter-spacing:10px; word-spacing:15px; font-size: 25px;}
+	  95% {color:white; top:210px; left:220px; letter-spacing:10px; word-spacing:15px; font-size: 25px;}
+	}
+	#posib {
+	  color:black;
+	  position:absolute;
+	  top:0px;
+	  left:500px;
+	  /*text-align:center;*/
+	  font-family:"Impact";
+	  font-size: 20px;
+	  z-index: 1;
+	  transition: top 0.5s, left 0.5s, color 8s, font-size 6s;
+	  animation:anim_posib 8s 1;
+	}
+	#posib:hover {
+	  color:lime;
+	  top:135px;
+	  left:470px;
+	  font-size: 30px;
+	}
+	body
+   {
+          background-color:lime;
+	  background-image:url('D:/html css/snake_one.png'), url('D:/html css/snake_two.png');
+	  background-repeat:no-repeat, no-repeat;
+          background-attachment:fixed, fixed;
+          background-position:right -100px, left top;
+	  background-size:auto auto, 35% 35%;
+	  height: 100%;
+    }
+	#footer {
+          border-top:2px white solid;
+	  position:absolute;
+          bottom:0px;
+          left:0px;
+          height:50px;
+          width: 100%;
+	  background-image:url('D:/html css/snake_three.jpg');
+	  /*background-size:70% 70%;*/
+	  background-repeat:no-repeat;
+          margin-bottom:-770px;
+	}
+/*Лінія меню*/
+	#line {
+	  border-top:2px white solid;
+	  border-bottom:2px white solid;
+	  position:absolute;
+	  top:218px;
+          left:0px;
+          height:50px;
+	  width:100%;
+     /* width:1365.5px;*/
+	 background-color: black; 
+	}
+	@keyframes anim_ml {
+	  0% {visibility:hidden;}
+	  100% {visibility:hidden;}
+	}
+	#maineline {
+	  position:absolute;
+	  top:220px;
+	  left:25px;
+	  height:50px;
+          width:1315.5px;
+	  animation:anim_ml 7s 1;
+	}
+	#maine_td {
+	  
+	  color: white;
+	  /*background-color:#DC63C2;*/
+	  /*height:50px;
+      width:187,93;*/
+	  user-select: none;
+	  text-decoration: none;
+	  outline: none;
+      font-weight:bold;	  
+	  font-family:"Monotype Corsiva";
+	  font-size:1.8em;
+	  /*animation:anim_ml 8s 1;*/
+	}
+	#maine_tr {animation:anim_ml 8s 1;}
+	#maine_td:active {
+	  background-color: white; /* Колір при настиканні */
+	  
+	}
+	#maine_td:hover {
+	   color: black;
+	   background-color: white; /* Колір при наведенні курсору */
+	}
+	#maine_tr:active {
+	  color: black;
+	  background-color: white; /* Колір при настиканні */
+	}
+	#maine_tr:hover {
+	   color: black;
+	   background-color: white; /* Колір при наведенні курсору */
+	}
+ /*Різні публікації в головному розділі */	
+	#public {
+	  position:absolute;
+	  top:270px;
+	  left:355px;
+	  height:1100px;
+	  width:630px;
+	  border-left: 2px white solid;
+	  border-right: 2px white solid;
+	  
+	}
+	#pub {
+	  height:200px;
+	  width:500px;
+	  font-size:3am;
+	  text-align:left;
+	  word-wrap:break-word;
+	  overflow-x:hidden;
+	  text-indent: 1.5em;
+	  padding: 10px 10px 20px 10px; 
+	  margin:15px auto 20px auto;
+	  border: 2px green solid;
+	  border-top-left-radius:20px;
+	  border-bottom-left-radius:20px;
+	  box-shadow:10px 10px 20px 5px black;
+	}
+        #pubTitle {
+          height: 5px;
+          font-size:20px;
+          font-weight:bold;
+          text-align:center;
+        }
+
+/* анімована галерея */
+	#galer {
+	  position:absolute;
+	  top:300px;
+	  left:1000px;
+	  width: 300px;
+	  padding-left:20px;
+	  padding-bottom: 5px;
+	  border-bottom: 3px solid black;
+	  font-size:5am;
+	  font-family: Arial;
+	  font-weight:bold;
+	}
+	#foto {
+	  position:absolute;
+	  top:330px;
+	  left:1010px; 
+	}
+         
+        .buttons { 
+           width: 135px;
+           height: 30px;
+           border: 2px green solid;
+           color: green;
+           background: rgba(0, 0, 0, 0.0);
+           font-family: 'Montserrat', sans-serif;
+           font-size: 15px;
+           font-weight:bold;
+           text-decoration: none;
+           outline: none;
+           transmition: border, font-size;
+        }
+
+        .buttons:hover {
+            border: 1px lime solid;
+            font-size: 20px;
+            text-shadow: 3px 3px 6px gray;
+         } 
+         
+         .buttons:active {
+            transform: translateY(4px);
+          }
+
+        .buttonsNext { 
+           border-radius: 0px 0px 100px 0px;
+        }
+
+        .buttonsPrev { 
+           border-radius: 100px 0px 0px 0px;
+        }
+        
+	#foto1 {
+	  position:absolute;
+          top:7px;   
+          left:0px;
+          color:#FFF;
+	  padding: 1px 8px 1px 1px;
+	  border-top-right-radius: 10px;
+	  border-bottom-right-radius: 10px;
+          font-family:Arial, Helvetica, sans-serif;
+          font-size:15px; 
+          background-color:rgba(0,128,0,0.4);
+	}
+
+/*відео*/	
+     #vid {
+	  position:absolute;
+	  top:530px;
+	  left:1000px;
+	  width: 300px;
+	  padding-left:20px;
+	  padding-bottom: 5px;
+	  border-bottom: 3px solid black;
+	  font-size:5am;
+	  font-family: Arial;
+	  font-weight:bold;
+	}
+	#vids {
+	  position:absolute;
+	  top:560px;
+	  left:1010px;
+
+	}
+/* форма */
+        #form1 {
+	  position:absolute;
+	  width: 300px;
+	  top:280px;
+	  left:20px;
+	  border-width: 2px;
+	  border-color:green;
+	}
+    
+
