@@ -1,63 +1,48 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import videosData from './videosData'
 
-class VideoGallery extends React.Component {
+function VideoGallery () {
 
-    constructor () {
-      super();
-      this.state = {
-        items: videosData,
-        index: 0
-      }
-      this.handleNext = this.handleNext.bind(this)
-      this.handlePrevious = this.handlePrevious .bind(this)     
-    }
+    const [index, setIndex] = useState(0);
+    const [items, setItems] = useState(videosData);
 
-    componentDidMount () {
-       this.setState({ index: Math.floor(Math.random() * this.state.items.length) })
-    }
+    useEffect (()=> {
+       index: Math.floor(Math.random() * items.length)    
+    })
 
-    handleNext () {
-       this.setState(prevState => {
-         if (this.state.index < this.state.items.length-1) 
-             return {
-               index: prevState.index + 1
-             }
+    function handleNext () {
+       
+         if (index < items.length-1) 
+             setIndex(index + 1)
           
-          else return { index: prevState.index }
-       })
+          else return index
     }
 
-    handlePrevious () {
-       this.setState(prevState => {
-         if (this.state.index > 0) 
-             return {
-               index: prevState.index - 1
-             }
+    function handlePrevious () {
+       
+         if (index > 0) 
+             return setIndex(index - 1)
           
-          else return { index: prevState.index }
-       })
+          else return index
     }
 
-    render() { 
-      
       return (
          <div>
             <div id="vid">VIDEO</div> 
             <div id="vids" >
               <object width='270' height='180'
-                   data={this.state.items[this.state.index].url}>
+                   data={items[index].url}>
               </object>
               <div>
-                 <button onClick={this.handlePrevious} className="buttons buttonsPrev">PREVIOUS</button>
-                 <button onClick={this.handleNext} className="buttons buttonsNext">NEXT</button>
+                 <button onClick={handlePrevious} className="buttons buttonsPrev">PREVIOUS</button>
+                 <button onClick={handleNext} className="buttons buttonsNext">NEXT</button>
               </div>
             </div>
             
             
          </div>
       )
-     } 
+     
   }
 
 export default VideoGallery
