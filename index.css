@@ -234,5 +234,22 @@
 	  border-width: 2px;
 	  border-color:green;
 	}
-    
 
+/* â³ê³ */
+	#wiki {
+	  position:absolute;
+	  top:530px;
+	  left:20px;
+	  width: 300px;
+	  padding-left:20px;
+	  padding-bottom: 5px;
+	  border-bottom: 3px solid black;
+	  font-size:5am;
+	  font-family: Arial;
+	  font-weight:bold;
+	}  
+	#wikiObj {
+	  position:absolute;
+	  top:565px;
+	  left:20px;
+	}
